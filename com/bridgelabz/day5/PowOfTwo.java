@@ -1,22 +1,20 @@
 package com.bridgelabz.day5;
 
+import java.util.Scanner;
+
 public class PowOfTwo {
 
 	public static void main(String[] args) {
-		  // read in one command-line argument
-        int n;
 
-        int i = 0;                // count from 0 to N
-        int powerOfTwo = 1;       // the ith power of two
+		Scanner sc = new Scanner(System.in);
 
-        // repeat until i equals n
-        while (i <= n) {
-            System.out.println(i + " " + powerOfTwo);   // print out the power of two
-            powerOfTwo = 2 * powerOfTwo;                // double to get the next one
-            i = i + 1;
-        }
-
-    }
+		int i = 0, n = sc.nextInt();
+		int powerOfTwo = 1;
+		while (i <= n) {
+			System.out.println("2^"+i + "=" + powerOfTwo);
+			powerOfTwo = 2 * powerOfTwo;
+			i = i + 1;
+		}
 
 	}
 
